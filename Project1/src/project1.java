@@ -7,12 +7,8 @@ import java.io.*;
 public class project1 {
 
 	
-	
-
 public static void main (String[] args) {  
 		
-	
-	
 	
 	int userInput; 
 	userInput = first();
@@ -27,15 +23,14 @@ public static void main (String[] args) {
 	    case 0 :  
 	    	System.out.print("Bye");
 	    	 break; 
-	   
-	 } 
+         } 
+	 
     }
 
 		
  
 	public static int  first (){ 
-	
-		 boolean mainLoop = true;
+
 		
 		   int choice;
 	// display first menu 
@@ -48,17 +43,12 @@ public static void main (String[] args) {
         System.out.println("3-Exit"); 
         System.out.println("Enter Your Choice : "); 
 
-        //setup scanner 
         
         Scanner in = new Scanner(System.in);   
         
              
-    // get user input 
        choice = in.nextInt();    
        
-
-	  
-            
        switch (choice) { 
        
        case 1 :  
@@ -91,18 +81,15 @@ break;
     	 
        }
 		   } 
-		   while(choice != 3 /*Exit loop when choice is 4*/);
-		   
-		   
+		   while(choice != 3);
+		      
 	return choice;
 
 	
-	
 	} 
 	  
-	   // 
        public static int sec () {  
-    	   boolean mainLoop = true;
+    	
            int choice2;
     	do {    
         // display
@@ -128,9 +115,6 @@ break;
      	      System.out.println("An error occurred.");
      	      e.printStackTrace();
      	    }   
-           //search
-          
-
          
            
            switch (choice2) { 
@@ -182,7 +166,7 @@ break;
               
            }    
     	}
-           while(choice2 != 4 /*Exit loop when choice is 4*/);
+           while(choice2 != 4 );
            return choice2; 
        
     	
